@@ -2857,9 +2857,7 @@ namespace FastColoredTextBoxNS
                 //
                 VerticalScroll.Value = Math.Max(VerticalScroll.Minimum, Math.Min(VerticalScroll.Maximum, newValue));
             }
-            if (se.ScrollOrientation == ScrollOrientation.HorizontalScroll)
-                HorizontalScroll.Value = Math.Max(HorizontalScroll.Minimum, Math.Min(HorizontalScroll.Maximum, se.NewValue));
-
+            
             UpdateScrollbars();
 
             Invalidate();
